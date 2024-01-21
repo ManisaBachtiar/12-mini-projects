@@ -1,0 +1,23 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    border-radius: 5px;
+    width: 100px;
+    padding: 10px;
+    border: 2px solid palevioletred;
+    background-color: white;
+}
+button:hover{
+    background-color: palevioletred;
+    transform: scale(1.1);
+}
