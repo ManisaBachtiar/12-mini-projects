@@ -30,6 +30,16 @@ img{
 }
 h1{
   padding: 20px;
-  margin-top: 10px;
+  margin-top: -10px;
 }
-
+#btnPrev{
+  
+  margin-left: 5px;
+}
+.iconB{
+  display: flex;
+}
+#btnNext{
+  
+  margin-left: 10px;
+}
