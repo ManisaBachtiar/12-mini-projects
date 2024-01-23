@@ -28,8 +28,8 @@ h3 {
 svg{
     display: none;
 }
-.none{
-    display: none;
+.flex{
+    display: flex;
 }
 
  @media (max-width:600px) {
@@ -43,6 +43,7 @@ svg{
         top: 0;
         margin-right:0;
         height: 100vh;
+        display: none;
       
         
     }
