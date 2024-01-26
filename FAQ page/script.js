@@ -1,29 +1,34 @@
-let plus = document.getElementsByClassName('plus')
-let minus = document.getElementsByClassName('minus');
-let answer = document.getElementsByClassName('answer');
-for (var i = 0; i < answer.length; i++) {
-   answer[i].classList.add('none')
+let plus = document.getElementsByClassName("plus");
+let minus = document.getElementsByClassName("minus");
+let answer = document.getElementsByClassName("answer");
+let allElements = document.querySelectorAll(".all");
+
+for (let i = 0; i < answer.length; i++) {
+  answer[i].classList.toggle("none");
 }
-for (var i = 0; i < minus.length; i++) {
-    minus[i].classList.add('none')
- }
- for (var i = 0; i < plus.length; i++) {
-    plus[i].addEventListener('click', function() {
-      var ans = this.parentElement.parentElement.nextElementSibling;
-    var min = this.nextElementSibling;
-      this.classList.add('none')
-      ans.classList.remove('none')
-      min.classList.remove('none')
-      
-    });
-  }
-  for (var i = 0; i < minus.length; i++) {
-    minus[i].addEventListener('click', function() {
-      var ans = this.parentElement.parentElement.nextElementSibling;
-    var plu = this.previousElementSibling;
-      this.classList.add('none')
-      ans.classList.add('none')
-      plu.classList.remove('none')
-      
-    });
-  }
+
+for (let i = 0; i < minus.length; i++) {
+  minus[i].classList.toggle("none");
+}
+for (let i = 0; i < plus.length; i++) {
+  plus[i].addEventListener("click", function () {
+    let ans = this.parentElement.parentElement.nextElementSibling;
+    let min = this.nextElementSibling;
+    let prev =
+      this.parentElement.parentElement.parentElement.previousElementSibling;
+    let next =
+      this.parentElement.parentElement.parentElement.ne
+    this.classList.toggle("none");
+    ans.classList.toggle("none");
+    min.classList.toggle("none");
+  });
+}
+for (let i = 0; i < minus.length; i++) {
+  minus[i].addEventListener("click", function () {
+    let ans = this.parentElement.parentElement.nextElementSibling;
+    let plu = this.previousElementSibling;
+    this.classList.toggle("none");
+    ans.classList.toggle("none");
+    plu.classList.toggle("none");
+  });
+}
