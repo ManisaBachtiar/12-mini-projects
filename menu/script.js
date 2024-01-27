@@ -29,7 +29,7 @@ const foodItems = [
     name: "Vegetarian Curry",
     description: "Flavorful curry with assorted vegetables and spices.",
     price: 7.99,
-    img: "img/4.jpg",
+    img: "img/6.jpg",
     category: "food",
   },
   {
@@ -37,7 +37,7 @@ const foodItems = [
     name: "Iced Coffee",
     description: "Chilled coffee served with ice cubes.",
     price: 4.99,
-    img: "img/5.jpg",
+    img: "img/4.jpg",
     category: "drink",
   },
   {
@@ -45,35 +45,30 @@ const foodItems = [
     name: "Fresh Orange Juice",
     description: "Refreshing orange juice made from freshly squeezed oranges.",
     price: 5.49,
-    img: "img/6.jpg",
+    img: "img/5.jpg",
     category: "drink",
   },
 ];
-let filterBtn = document.querySelectorAll('.filterBtn');
+let filterBtn = document.querySelectorAll(".filterBtn");
 let container = document.querySelector(".container");
 window.addEventListener("DOMContentLoaded", function () {
   displayFood(foodItems);
 });
 
-filterBtn.forEach(function(btn) {
-    btn.addEventListener('click', function(e)
-    {
-        const category = e.currentTarget.dataset.id;
-        const menuCat = foodItems.filter(function(menuItem){
-            
-            if(menuItem.category === category)
-            return menuItem;
-        });
-        
-        if(category === 'all'){
-            displayFood(foodItems)
-        }
-        else{
-            displayFood(menuCat);
-        }
+filterBtn.forEach(function (btn) {
+  btn.addEventListener("click", function (e) {
+    const category = e.currentTarget.dataset.id;
+    const menuCat = foodItems.filter(function (menuItem) {
+      if (menuItem.category === category) return menuItem;
+    });
+
+    if (category === "all") {
+      displayFood(foodItems);
+    } else {
+      displayFood(menuCat);
     }
-    )
-})
+  });
+});
 function displayFood(foodItems) {
   let display = foodItems.map(function (item) {
     return ` 

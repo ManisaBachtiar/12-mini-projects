@@ -9,13 +9,13 @@ body{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    background-color: red;
+    background-color: rgb(97, 95, 95);
     align-items: center;
     min-height: 100vh;
 }
 .all{
     margin: 5px;
-    background-color: white;
+    background-color: rgb(255, 252, 252);
     width: 350px;
     border-radius: 5px;
     height:auto;
@@ -27,16 +27,16 @@ body{
    text-align: center;
    align-items: center;
    justify-content: center;
-    margin: 10px;
+    
     
 }
 .answer{
-    border-top: 2px solid grey;
-    
+    border-top: 2px solid grey;  
     margin: 10px;
 }
 h2{
-   width: 90%;
+    font-weight: 300;
+   width: 80%;
     font-size: 24px;
 }
 .iconku{
@@ -47,8 +47,14 @@ h2{
     absolute;
 }
 p{
+    padding-top: 10px;
    margin: 3px;
+   padding-bottom: 10px;
 }
 .none{
     display: none;
+}
+h1{
+    color: white;
+    font-size: 44px;
 }

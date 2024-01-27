@@ -14,10 +14,10 @@ button {
     border-radius: 5px;
     width: 100px;
     padding: 10px;
-    border: 2px solid palevioletred;
+    border: 2px solid white;
     background-color: white;
 }
 button:hover{
-    background-color: palevioletred;
+   
     transform: scale(1.1);
 }
