@@ -1,0 +1,158 @@
+
+body {
+    padding: 0;
+    margin: 0;
+   
+}
+
+img {
+    width: 50%;
+    height: 250px;
+}
+
+.content {
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    height: 300px;
+    padding: 0 50px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.button {
+
+    height: 250px;
+    margin-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.button2 {
+
+    padding-bottom: 10px;
+ 
+    display: flex;
+    height: 30px;
+}
+
+button {
+    width: 100%;
+    font-size: 16px;
+    height: 60px;
+    
+    background-color:rgb(230, 168, 253) ;
+    border: 1px solid rgb(248, 84, 248);
+
+}
+button:hover{
+    background-color: white;
+}
+
+article {
+    display: none;
+    width: 100%;
+    margin: 10px auto;
+    padding-bottom: 1px;
+}
+/* .title{
+    margin: 0;
+    padding: 0;
+} */
+
+.show {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: aliceblue;
+}
+.title{
+    padding: 0;
+    padding-top: 10px;
+    margin: 0;
+   
+}
+h3{
+    
+    padding-top: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+#end{
+    text-align: center;
+  
+   padding: 10px 0;
+   margin: 0;
+}
+.teks{
+padding: 0;
+font-size: 15px;
+    margin: 0;
+}
+@media (max-width:901px) {
+    .content {
+        flex-direction: column;
+
+        width: 70%;
+        margin: auto;
+        height: auto;
+        padding: 0 50px;
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    img {
+        width: 65vw;
+        height: auto;
+    }
+
+    .button {
+
+        height: 250px;
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    article {
+
+        width: 100%;
+        margin: 0px auto;
+
+    }
+    h3{
+       
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        height: 80px;
+      
+        width: 100%;
+        font-size: 16px;
+        background-color: rgb(228, 52, 255);
+        border: 1px solid rgb(187, 0, 205);
+
+    }
+
+    .button2 {
+
+        padding-bottom: 10px;
+        margin-top: 10px;
+        display: flex;
+        height: 30px;
+        
+    }
+
+}
